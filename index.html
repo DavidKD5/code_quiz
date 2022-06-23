@@ -4,23 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Development Quiz</title>
     <link rel="stylesheet" href="Assets/css/style.css" />
+    <title>Web Dev Quiz</title>
   </head>
   <body>
-    <!-- Intro Container -->
-    <div class="info_box">
-      <div class="info-title"><h1>Coding Quiz Challenge</h1></div>
-      <div class="into-list">
-        <div class="info">
+
+    <!-- Intro Section -->
+    <section class="introCont">
+      <div class="introTitleSubCont">
+        <span>Coding Quiz Challenge</span>
+      </div>
+      <div class="introRulesCont">
+        <p class="introRules">
           Try to answer the following code-related questions within the time
           limit. Keep in mind that incorrect answers will penalize your
           score/time by ten seconds!
+        </p>
+      </div>
+      <div class="startBtnCont">
+        <button class="startBtn">Start Quiz</button>
+      </div>
+    </section>
+
+    <!-- Head Quiz Section -->
+    <section class="quizCont">
+      <header>
+        <div class="timeCaption">Timer:</div>
+        <div class="timer">5:00</div>
+      </header>
+
+      <!-- Main Quiz Section -->
+      <div class="questionCont">
+        <span>Commonly used data types DO NOT include:</span>
+      </div>
+      <div class="answerList">
+        <div class="answer">
+          <span>Strings</span>
+        </div>
+        <div class="answer">
+          <span>Booleans</span>
+        </div>
+        <div class="answer">
+          <span>Alerts</span>
+        </div>
+        <div class="answer">
+          <span>Numbers</span>
         </div>
       </div>
-      <div class="buttons">
-        <button class="restart">Start Quiz</button>
+
+      <!-- Footer Quiz Section -->
+      <footer>
+        <div class="questionCount">
+          <span
+            ><p>2</p>
+            Of
+            <p>5</p>
+            Questions</span
+          >
+        </div>
+        <button class="exitBtn">Exit</button>
+        <button class="nextBtn">Next</button>
+      </footer>
+    </section>
+
+    <!-- Finish Quiz Section -->
+    <section class="allDoneCont">
+      <div class="resultsCont">
+        <span>All done!</span>
       </div>
-    </div>
+      <div class="answerList">
+        <div class="answer">
+          Your final score is:
+          <span>0</span>
+        </div>
+        <div class="answer"><input type="text"> Enter initials:</input> <button class="enterInitialsBtn">Submit</button></div>
+      </div>
+    </section>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Assets/js/index.js"></script>
+    
+    
+
   </body>
 </html>
