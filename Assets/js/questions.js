@@ -1,72 +1,40 @@
-// creating an array and passing the number, questions, options, and answers
+// Store list of questions
 let questions = [
   {
-    numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
-    options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language",
+    num: 1,
+    question: "Commonly used data types DO NOT include:",
+    answer: "Alerts",
+    choice: ["Strings", "Booleans", "Alerts", "Numbers"],
+  },
+  {
+    num: 2,
+    question:
+      "The condition in an if/else statement is enclosed within ________.",
+    answer: "Parenthesis",
+    choice: ["Quotes", "Curly brackets", "Parenthesis", "Square brackets"],
+  },
+  {
+    num: 3,
+    question: "Arrays in JavaScript can be used to store _______.",
+    answer: "All of the above",
+    choice: [
+      "Numbers and strings",
+      "Other arrays",
+      "Booleans",
+      "All of the above",
     ],
   },
   {
-    numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
-    options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet",
-    ],
+    num: 4,
+    question:
+      "A very useful tool used during development and debugging for printing content to the debugger is: ",
+    answer: "Console.log",
+    choice: ["JavaScript", "Terminal/bash", "For loops", "Console.log"],
   },
   {
-    numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
-    options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor",
-    ],
+    num: 5,
+    question: "String values must be enclosed within _____.",
+    answer: "Quotes",
+    choice: ["Commas", "Curly brackets", "Quotes", "Parenthesis"],
   },
-  {
-    numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
-    options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language",
-    ],
-  },
-  {
-    numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language",
-    ],
-  },
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
 ];

@@ -1,15 +1,37 @@
-/* .quizCont {
-  opacity: 0;
-} */
-
-.allDoneCont {
-  opacity: 0;
+.correct {
+  color: rgb(0, 0, 121);
+  background-color: lightblue;
+  border-color: lightskyblue;
 }
 
-.nonActive {
-  opacity: 0;
+.wrong {
+  color: rgb(113, 0, 0);
+  background-color: rgb(255, 179, 179);
+  border-color: rgb(250, 135, 135);
 }
 
-.active {
-  opacity: 1;
+.disable {
+  pointer-events: none;
+}
+
+.center {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.introTitleSubCont,
+.startBtn,
+.startBtnCont {
+  margin: auto;
+  transform: translate(50%, 0%);
+}
+
+p {
+  transform: translate(8%, 0%);
+}
+
+.answer {
+  cursor: pointer;
 }

@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="Assets/css/style.css" />
     <title>Web Dev Quiz</title>
   </head>
   <body>
 
     <!-- Intro Section -->
-    <section class="introCont">
+    <section class="introCont center">
       <div class="introTitleSubCont">
         <span>Coding Quiz Challenge</span>
       </div>
@@ -30,15 +31,17 @@
     <section class="quizCont">
       <header>
         <div class="timeCaption">Timer:</div>
-        <div class="timer">5:00</div>
+        <div class="timer">60</div>
       </header>
 
-      <!-- Main Quiz Section -->
-      <div class="questionCont">
-        <span>Commonly used data types DO NOT include:</span>
-      </div>
-      <div class="answerList">
-        <div class="answer">
+    <!-- Main Quiz Section -->
+      <section>
+        
+        <div class="questionCont">
+        <!-- <span>Commonly used data types DO NOT include:</span> -->
+        </div>
+        <div class="answerList">
+        <!-- <div class="answer">
           <span>Strings</span>
         </div>
         <div class="answer">
@@ -49,18 +52,19 @@
         </div>
         <div class="answer">
           <span>Numbers</span>
+        </div> -->
         </div>
-      </div>
+      </section>
 
       <!-- Footer Quiz Section -->
       <footer>
         <div class="questionCount">
-          <span
+          <!-- <span
             ><p>2</p>
             Of
             <p>5</p>
             Questions</span
-          >
+          > -->
         </div>
         <button class="exitBtn">Exit</button>
         <button class="nextBtn">Next</button>
@@ -72,17 +76,22 @@
       <div class="resultsCont">
         <span>All done!</span>
       </div>
-      <div class="answerList">
-        <div class="answer">
+        <div class="score">
           Your final score is:
-          <span>0</span>
+          <span></span>
         </div>
-        <div class="answer"><input type="text"> Enter initials:</input> <button class="enterInitialsBtn">Submit</button></div>
-      </div>
+        <form class="initialsCont">
+          <input type="text" id="myinput">Enter initials:</input> 
+          <button id="mybtn">Submit</button>
+        </form>
+      
     </section>
+
+  
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Assets/js/questions.js"></script>
     <script src="Assets/js/index.js"></script>
     
     
